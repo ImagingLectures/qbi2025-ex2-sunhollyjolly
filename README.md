@@ -6,6 +6,7 @@
 - Train a simple model and evaluate the effect of using augmented data
 
 ## Preparation
+- Accept assignment: https://classroom.github.com/a/Zz9PEnY2
 - Clone your student repository (```git clone```)
 - Run `uv sync` and check everything is correct with `uv run hello.py`
 - `cd exercise`
