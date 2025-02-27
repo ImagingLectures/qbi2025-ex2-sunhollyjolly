@@ -8,8 +8,8 @@ from sklearn.metrics import accuracy_score
 @pytest.fixture(scope="session")
 def loaded_data():
     # Load your data once
-    imgs = io.imread('ct_tiles.tif')
-    labels = pd.read_csv('malignancy.csv').malignancy.values
+    imgs = io.imread('exercise/ct_tiles.tif')
+    labels = pd.read_csv('exercise/malignancy.csv').malignancy.values
     return imgs, labels
 
 def test_dataset_subset(loaded_data):

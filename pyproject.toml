@@ -15,4 +15,5 @@ dependencies = [
     "scikit-image>=0.25.1",
     "scikit-learn>=1.6.1",
     "scipy>=1.15.1",
+    "seaborn>=0.13.2",
 ]
