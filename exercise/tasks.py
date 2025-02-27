@@ -1,4 +1,3 @@
-from typing import Callable
 import numpy as np
 from typing import Tuple, Callable
 import albumentations as A
@@ -46,7 +45,7 @@ def create_dataset_subset(data: np.ndarray, labels: np.ndarray, n: int) -> Tuple
 def augment_data(data: np.ndarray, labels: np.ndarray) -> tuple[np.ndarray, np.ndarray]:
 
     transform = A.Compose([
-        #A.RandomCrop(width=64, height=64),
+        A.RandomCrop(width=64, height=64, p = 1.0),
         A.HorizontalFlip(p=0.5),
         #A.VerticalFlip(p=0.3)
         #A.RandomBrightnessContrast(brightness_limit=0.1, contrast_limit=0.1, p=0.3),
