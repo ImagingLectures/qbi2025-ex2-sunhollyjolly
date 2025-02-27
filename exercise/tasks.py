@@ -5,6 +5,7 @@ import albumentations as A
 import matplotlib.pyplot as plt
 import seaborn as sns
 import pandas as pd
+import cv2
 from sklearn.neighbors import KNeighborsClassifier
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import accuracy_score, confusion_matrix
